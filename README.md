@@ -8,8 +8,9 @@ unzip /root/master.zip
 
 3° - Copie o arquivo para dentro da pasta /opt/mk-auth/scripts
 cp /root/atualizacoordenadasmk-auth-master/atualiza_coordenadas.php /opt/mk-auth/scripts/atualiza_coordenadas.php
-
-4° - Altere o token na primeira linha. // Crie o token na plataforma do google: https://developers.google.com/maps/documentation/geocoding/get-api-key?hl=pt-br
+ 
+// Crie o token na plataforma do google: https://developers.google.com/maps/documentation/geocoding/get-api-key?hl=pt-br
+4° - Altere o token na primeira linha.
 nano /opt/mk-auth/scripts/atualiza_coordenadas.php
 
 
