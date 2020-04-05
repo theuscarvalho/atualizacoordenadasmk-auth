@@ -1,4 +1,5 @@
-Automatizar 
+Automatizar a execução do script:
+
 1° - Baixe o arquivo dentro da pasta /root
 cd /root && wget https://github.com/theuscarvalho/atualizacoordenadasmk-auth/archive/master.zip
 
@@ -15,7 +16,7 @@ nano /opt/mk-auth/scripts/atualiza_coordenadas.php
 5° - Permissões de execução
 chmod 777 -R /opt/mk-auth/scripts/atualiza_coordenadas.php
 
-6 - Cria rotina no cron. (Limpa os logs do usuário de minuto em minuto)
+6 - Cria rotina no cron. (Pecorre todas as tabelas a procura de novos cadastros)
 echo "*/1 * * * * root php /opt/mk-auth/scripts/atualiza_coordenadas.php" >> /etc/crontab
 
 7 - E para finalizar, reboot no cron para iniciar a operação do script.
