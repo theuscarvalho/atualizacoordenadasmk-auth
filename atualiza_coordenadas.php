@@ -25,7 +25,7 @@ while ($dados_sql = $con_sql->fetch_array()) {
    $uf = $dados_sql['estado_res'];
    $ver_coord = $dados_sql['coordenadas'];
    $resul_coord = strlen($ver_coord);
-   if ($ver_coord >= $resul_coord){
+   if ($resul_coord <= '15'){
    $endA = $numero." + ".$logradouro." + ".$bairro." + ".$cidade." + ".$uf;
    $endB = str_replace(" ", "+", $endA);
    $address = utf8_encode($endB);
@@ -41,7 +41,7 @@ while ($dados_sql = $con_sql->fetch_array()) {
    else {
       echo "Erro na conexao com o banco de dados.";
       }
-   echo $id."- ".$result_final;
+   echo @$id."- ".@$result_final;
 } else{
  echo "Cadastro já atualizado.";
 }
