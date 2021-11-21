@@ -13,6 +13,7 @@ Automatizar a execução do script:
 <pre>cp /root/atualizacoordenadasmk-auth-master/atualiza_coordenadas.php /opt/mk-auth/scripts/atualiza_coordenadas.php</pre>
  
 // Crie o token na plataforma do google: https://developers.google.com/maps/documentation/geocoding/get-api-key?hl=pt-br
+
 4° - Altere o token na primeira linha.
 
 <pre>nano /opt/mk-auth/scripts/atualiza_coordenadas.php</pre>
